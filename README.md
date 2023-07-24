@@ -61,8 +61,6 @@ Ahora debemos asegurarnos de que solo se puedan colocar piezas en espacios desoc
 
 Siguiendo el proceso rojo - verde, mostraremos primero cuando no pasa la prueba.
 
-![](assets/17.jpg)
-
 ![](assets/18.jpg)
 
 Ahora implementaremos el metodo para que pase la prueba.
@@ -73,7 +71,12 @@ Ejecutamos la prueba y comprobamos que ha pasado correctamente:
 
 ![](assets/20.jpg)
 
+### Refactorizacion
 
+Refactorizaremos moviendo el codigo a metodos separados, se crearon los metodos checkIfOutTable 
+y checkIfEmpty a comparacion del codigo anterior que todo estaba en el metodo play.
+
+![](assets/21.jpg)
 
 ## Pregunta 2
 
