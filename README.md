@@ -1,5 +1,61 @@
 # ExamenSustitutorio-3S2
 
+## Pregunta 1
+
+Requisito 1: colocación de piezas
+
+Se definen los limites y lo que constituye una colocacion no valida de una pieza. Se puede
+colocar una pieza en cualquier espacio vacío de un tablero de 3×3.
+
+Dividiremos el requisito en 3 pruebas.
+
+Prueba limites del tablero I
+
+Cuando una pieza se coloca en cualquier lugar fuera del eje x, se lanza RuntimeException, en esta prueba,
+estamos definiendo que se espera RuntimeException cuando se invoca el método ticTacToe.jugar(5, 2).
+
+Ejecutamos esta prueba 3 veces, la primera vez, debería fallar porque el método jugar no existe. Una vez que se agrega,
+debería fallar porque no se lanza RuntimeException. La tercera vez, debería tener éxito porque el
+código que corresponde a esta prueba está completamente implementado.
+
+Primera vez falla porque el metodo jugar no existe:
+
+![](assets/8.jpg)
+
+![](assets/9.jpg)
+
+Ahora para la segunda vez debe fallar porque no se lanza RuntimeException:
+
+![](assets/10.jpg)
+
+![](assets/11.jpg)
+
+Para la tercera vez debe tener exito, ya que en esta parte se ha implementado el codigo 
+correspondiente a la prueba:
+
+![](assets/12.jpg)
+
+Ejecutamos la prueba y pasa correctamente:
+
+![](assets/13.jpg)
+
+Prueba limites del tablero II
+
+Ahora debemos validar el eje y
+
+Primero hacemos la prueba donde falla:
+
+![](assets/14.jpg)
+
+Luego implementamos la validacion para y:
+
+![](assets/15.jpg)
+
+Ejecutamos la prueba y vemos que pasa correctamente:
+
+![](assets/16.jpg)
+
+
 ## Pregunta 2
 
 ### Explica los resultados del archivo .json
