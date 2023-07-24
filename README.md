@@ -9,7 +9,7 @@ colocar una pieza en cualquier espacio vacío de un tablero de 3×3.
 
 Dividiremos el requisito en 3 pruebas.
 
-Prueba limites del tablero I
+### Prueba - limites del tablero I
 
 Cuando una pieza se coloca en cualquier lugar fuera del eje x, se lanza RuntimeException, en esta prueba,
 estamos definiendo que se espera RuntimeException cuando se invoca el método ticTacToe.jugar(5, 2).
@@ -39,7 +39,7 @@ Ejecutamos la prueba y pasa correctamente:
 
 ![](assets/13.jpg)
 
-Prueba limites del tablero II
+### Prueba - limites del tablero II
 
 Ahora debemos validar el eje y
 
@@ -54,6 +54,25 @@ Luego implementamos la validacion para y:
 Ejecutamos la prueba y vemos que pasa correctamente:
 
 ![](assets/16.jpg)
+
+### Prueba - lugar ocupado
+
+Ahora debemos asegurarnos de que solo se puedan colocar piezas en espacios desocupados.
+
+Siguiendo el proceso rojo - verde, mostraremos primero cuando no pasa la prueba.
+
+![](assets/17.jpg)
+
+![](assets/18.jpg)
+
+Ahora implementaremos el metodo para que pase la prueba.
+
+![](assets/19.jpg)
+
+Ejecutamos la prueba y comprobamos que ha pasado correctamente:
+
+![](assets/20.jpg)
+
 
 
 ## Pregunta 2
