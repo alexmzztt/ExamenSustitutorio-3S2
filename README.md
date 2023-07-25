@@ -527,7 +527,7 @@ Ahora hacemos que pase la prueba:
 
 Colocamos los valores correctos y vemos que pasa la prueba correctamente.
 
-[](assets/57.jpg)
+![](assets/57.jpg)
 
 
 
