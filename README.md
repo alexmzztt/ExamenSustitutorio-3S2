@@ -525,7 +525,7 @@ Falla ya que estamos tomando valores de 4 para ISS y 2 para Tiangong, cuando los
 
 Ahora hacemos que pase la prueba:
 
-Colocamos los valores correctos.
+Colocamos los valores correctos y vemos que pasa la prueba correctamente.
 
 [](assets/57.jpg)
 
