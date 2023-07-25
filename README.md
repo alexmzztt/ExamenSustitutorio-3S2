@@ -504,7 +504,14 @@ AstroService, cual es la única dependencia?
 La unica dependencia para AstroService es AstroResponde, porque dependiendo de esta clase 
 se va a poder tener el numero de astronautas.
 
-Ahora creamos la clase FakeGateway:
+Pregunta: Digamos que tu prueba de integración falló y ahora se quiere crear una prueba para
+AstroService. Una verdadera prueba unitaria para AstroService necesita un sustituto del gateway algún
+tipo de objeto falso (stub o mock) que devolverá exactamente lo que queremos cuando el servicio
+llame al método getResponse. No se quiere que ningún problema con el gateway afecte el éxito o el
+fracaso de las pruebas del servicio.
+Proporciona tu propio objeto falso para en una clase llamada FakeGateway que codifica una respuesta.
+
+Creamos FakeGateway:
 
 ![](assets/55.jpg)
 
