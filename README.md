@@ -485,8 +485,42 @@ Imprime la cantidad de astronautas por nave y tambien el formato JSON con los da
 
 ![](assets/7.jpg)
 
+Escribimos una prueba de integracion llamada AstroServiceTest
 
+Hacemos que falle:
 
+Falla ya que estamos tomando los valores de 2 y 3 y no son los valores de los astronautas en 
+cada nave, ya que son 7 y 3
+
+![](assets/53.jpg)
+
+Ahora hacemos que pase la prueba:
+
+![](assets/54.jpg)
+
+Pregunta: : Para usar Mockito, debes determinar las dependencias de la clase que está probando. ¿Para
+AstroService, cual es la única dependencia?
+
+La unica dependencia para AstroService es AstroResponde, porque dependiendo de esta clase 
+se va a poder tener el numero de astronautas.
+
+Ahora creamos la clase FakeGateway:
+
+![](assets/55.jpg)
+
+Y escribimos una prueba del servicio que usa FakeGateway.
+
+Primero hacemos que falle:
+
+Falla ya que estamos tomando valores de 4 para ISS y 2 para Tiangong, cuando los valores son de 7 y 3.
+
+![](assets/56.jpg)
+
+Ahora hacemos que pase la prueba:
+
+Colocamos los valores correctos.
+
+[](assets/57.jpg)
 
 
 
