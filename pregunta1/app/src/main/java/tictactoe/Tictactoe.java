@@ -8,15 +8,11 @@ public class Tictactoe {
 		{"\0", "\0", "\0"},
 		{"\0", "\0", "\0"},
 	};
-
-	
-
 	public String actualPlayer;
 	public String winner;
 
 	Tictactoe(){
 	}
-
 	public void play(int x, int y) {
 
 		int realX = x-1;

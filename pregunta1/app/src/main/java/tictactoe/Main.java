@@ -6,22 +6,17 @@ package tictactoe;
 import java.util.Random;
 import java.util.Scanner;
 
-public class App {
-
+public class Main {
 	public static void main(String[] args) {
 		Tictactoe game = new Tictactoe();
 		Scanner input = new Scanner(System.in);
 		Random ia = new Random();
 
 		while(game.winner  ==  null){
-
 			game.nextPlayer();
-
 			if(game.actualPlayer == "X"){
-
 				System.out.println("--------------------------------------");
 				game.printTable();
-
 				RuntimeException error;
 				do{
 					error = null;
@@ -36,10 +31,8 @@ public class App {
 
 						System.out.println("Ingrese numeros validos!");
 					}
-
 				}while(error != null);
 
-				
 				game.checkWinner();
 			}
 			else if(game.actualPlayer == "O"){
@@ -53,9 +46,8 @@ public class App {
 					}catch(RuntimeException e){
 						error =e;
 					}
-
 				}while(error != null);
-				
+
 				game.checkWinner();
 			}
 		}
